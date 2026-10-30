@@ -36,7 +36,7 @@ The network is divided into separate security zones using VLANs.
 | ---: | ----------------- | ------------- | ----------------------------------------- |
 |   10 | `192.168.10.0/27` | Management    | Network and infrastructure administration |
 |   20 | `192.168.20.0/24` | Trusted       | Trusted user devices                      |
-|   30 | `192.168.30.0/27` | Lab / Servers | Servers, VMs and infrastructure workloads |
+|   30 | `192.168.30.0/24` | Lab / Servers | Servers, VMs and infrastructure workloads |
 |   40 | `192.168.40.0/24` | IoT           | Smart-home and IoT devices                |
 |   50 | `192.168.50.0/27` | Guest         | Guest and untrusted user devices          |
 
@@ -148,9 +148,9 @@ Trusted devices may access:
 
 # 5. VLAN 30 — Lab / Servers
 
-**Network:** `192.168.30.0/27`
-**Subnet Mask:** `255.255.255.224`
-**Usable Addresses:** `192.168.30.1 – 192.168.30.30`
+**Network:** `192.168.30.0/24`
+**Subnet Mask:** `255.255.255.0`
+**Usable Addresses:** `192.168.30.1 – 192.168.30.254`
 
 ## Purpose
 
